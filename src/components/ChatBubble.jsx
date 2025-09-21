@@ -13,7 +13,7 @@ export default function ChatBubble({ msg }) {
           e.clipboardData.setData("text/plain", selection);
         }
       }}
-      className={`sm:max-w-[45%] max-w-[50%] px-4 py-2 rounded-lg text-sm mb-4 ${
+      className={`sm:max-w-[45%] max-w-[50%] px-4 py-2 rounded-lg text-sm mb-4 text-wrap break-words  ${
         isUser
           ? "bg-blue-500 text-white self-end ml-auto"
           : "bg-gray-100 text-gray-800 self-start mr-auto"
